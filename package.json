@@ -1,0 +1,11 @@
+{
+  "name": "fsml",
+  "version": "0.0.1",
+  "description": "A package for scanning your working directory and convenient ways to get paths to files ",
+  "main": "FSMLParser.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "SPavelhjk",
+  "license": "MIT"
+}
