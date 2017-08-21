@@ -6,7 +6,7 @@ const {
 
 class FSMLParser {
 	constructor() {
-		this._pathToRootDir = this._findRootDirectory('../')
+		this._pathToRootDir = this._findRootDirectory('./')
 		this._makeListOfIgnoredFiles()
 		this._scanDirectory()
 	}
