@@ -22,7 +22,7 @@ const parser = new fsml()
 let dirScan = parser.dirScan 
 
 /*
- * Metho `pathToNode` the method takes one parameter, file name or directory,
+ * Method `pathToNode` the method takes one parameter, file name or directory,
  * and returns the path to the files as an array.
  * If the name corresponds to several files, then it returns an array with paths.
  * If the name does not match any file in the directory, it will return an empty array.

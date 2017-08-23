@@ -1,5 +1,5 @@
 const {
-	isDir
+    isDir
   , readdir
   , readFile
 } = require('./utils/fs')
