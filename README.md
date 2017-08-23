@@ -34,5 +34,4 @@ let pathToIndexJS = parser.pathToNode('index.js')
  * Destroy the object.
 */
 parser.destructor()
-parser = null
 ```
