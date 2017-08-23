@@ -29,6 +29,7 @@ let dirScan = parser.dirScan
 */
 let pathToModules = parser.pathToNode('modules')
 let pathToIndexJS = parser.pathToNode('index.js')
+let nonExistentFile = parser.pathToNode('asdfjasg.js') // [] - will return an empty array
 
 /*
  * Destroy the object.
