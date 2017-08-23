@@ -13,8 +13,8 @@ $ npm install --save-dev fsml
 /*
  * Include and initialize the package.
 */
-const fsml = require('fsml')
-const parser = new fsml()
+const FSMLParser = require('fsml')
+const parser = new FSMLParser()
 
 /*
  * Getter `dirScan` will return scan of the directory. 
