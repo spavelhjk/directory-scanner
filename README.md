@@ -8,7 +8,7 @@ Install `fsml` as `npm` package.
 $ npm install --save-dev fsml
 ```
 
-Libraries API.
+### Libraries API.
 ```js
 /*
  * Include and initialize the package.
@@ -34,4 +34,11 @@ let pathToIndexJS = parser.pathToNode('index.js')
  * Destroy the object.
 */
 parser.destructor()
+```
+
+### Ignore notes.
+`.fsmlignore` - specifies intentionally untracked files to ignore.
+```
+node_modules
+utils/fs.js
 ```
