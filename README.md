@@ -12,7 +12,7 @@ $ npm install --save-dev directory-scanner-tool
 /*
  * Include and initialize the package.
 */
-import DirectoryScanner from 'directory-scanner'
+import DirectoryScanner from 'directory-scanner-tool'
 
 const scanner = new DirectoryScanner()
 
