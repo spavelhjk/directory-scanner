@@ -4,7 +4,7 @@ A package for scanning your working directory and providing convenient ways to g
 ### Usage
 Install `directory-scanner` as an `npm` package.
 ```bash
-$ npm install --save-dev directory-scanner
+$ npm install --save-dev @spavelhjk/directory-scanner
 ```
 
 ### Libraries API.
