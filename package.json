@@ -1,11 +1,17 @@
 {
-  "name": "fsml",
-  "version": "0.0.2",
+  "name": "directory-scanner",
+  "version": "1.0.0",
   "description": "A package for scanning your working directory and convenient ways to get paths to files ",
-  "main": "FSMLParser.js",
+  "main": "src/DirectoryScanner.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "start": "ts-node src/index.ts"
   },
   "author": "SPavelhjk",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
 }

@@ -1,11 +1,10 @@
-# fsml
-######
-A package for scanning your working directory and convenient ways to get paths to files.
+# directory-scanner
+A package for scanning your working directory and providing convenient ways to get paths to files.
 
 ### Usage
-Install `fsml` as `npm` package.
+Install `directory-scanner` as an `npm` package.
 ```bash
-$ npm install --save-dev fsml
+$ npm install --save-dev directory-scanner
 ```
 
 ### Libraries API.
@@ -13,32 +12,33 @@ $ npm install --save-dev fsml
 /*
  * Include and initialize the package.
 */
-const FSMLParser = require('fsml')
-const parser = new FSMLParser()
+import DirectoryScanner from 'directory-scanner'
+
+const scanner = new DirectoryScanner()
 
 /*
- * Getter `dirScan` will return scan of the directory. 
+ * Getter `getScan()` will return a scan of the directory. 
 */
-let dirScan = parser.dirScan 
+let dirScan = scanner.getScan()
 
 /*
- * Method `pathToNode` the method takes one parameter, file name or directory,
+ * Method `getPathToNode` takes one parameter, a file or directory name,
  * and returns the path to the files as an array.
  * If the name corresponds to several files, then it returns an array with paths.
  * If the name does not match any file in the directory, it will return an empty array.
 */
-let pathToModules = parser.pathToNode('modules')
-let pathToIndexJS = parser.pathToNode('index.js')
-let nonExistentFile = parser.pathToNode('asdfjasg.js') // [] - will return an empty array
+let pathToModules = scanner.getPathToNode('modules')
+let pathToIndexJS = scanner.getPathToNode('index.js')
+let nonExistentFile = scanner.getPathToNode('non_existent_file.js') // [] - will return an empty array
 
 /*
  * Destroy the object.
 */
-parser.destructor()
+scanner.destructor()
 ```
 
 ### Ignore notes.
-`.fsmlignore` - specifies intentionally untracked files to ignore.
+`.dirscannerignore` - specifies intentionally untracked files to ignore.
 ```
 node_modules
 utils/fs.js
