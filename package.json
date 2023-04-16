@@ -1,5 +1,5 @@
 {
-  "name": "@spavelhjk/directory-scanner",
+  "name": "directory-scanner-tool",
   "version": "1.0.0",
   "description": "A package for scanning your working directory and convenient ways to get paths to files ",
   "main": "src/DirectoryScanner.ts",
